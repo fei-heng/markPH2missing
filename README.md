@@ -3,12 +3,12 @@
 MATLAB code to analyze a simulated data set based on the CYD14 efficacy trial (Section 3.3 of the Web-based Supplementary Material for the JRSSC paper: Yanqing Sun (yasun@uncc.edu), Li Qi, Fei Heng, and Peter B. Gilbert (2021) Hybrid Approach for the Stratified Mark-Specific Proportional Hazards Model  with Missing Covariates and Missing Marks, with Applications to Vaccine Efficacy Trials
 
 The folder contains:
-	* sim_data.mat: a simulated dataset
-	* MATLAB functions:
-		+ main.m: main function
-		+ aipw_imp1_strt.m: compute using the hybrid-MIEE method
-		+ weight.m: calculate the inverse probability weight
-		+ ksrmv.m: multivariate kernel smoothing regression
+* sim_data.mat: a simulated dataset
+* MATLAB functions:
+	+ main.m: main function
+	+ aipw_imp1_strt.m: compute using the hybrid-MIEE method
+	+ weight.m: calculate the inverse probability weight
+	+ ksrmv.m: multivariate kernel smoothing regression
 
 In main.m, we use load() to load the simulated dataset: load("sim_data.mat").
 It includes input variables as shown below. 
