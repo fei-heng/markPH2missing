@@ -1,6 +1,6 @@
 # markPH-2missing
 
-MATLAB code to analyze a simulated data set based on the CYD14 efficacy trial (Section 3.3 of the Web-based Supplementary Material for the JRSSC paper: Yanqing Sun (yasun@uncc.edu), Li Qi, Fei Heng, and Peter B. Gilbert (2020) Hybrid Approach for the Stratified Mark-Specific Proportional Hazards Model  with Missing Covariates and Missing Marks, with Applications to Vaccine Efficacy Trials
+MATLAB code for the JRSSC paper: Yanqing Sun (yasun@uncc.edu), Li Qi, Fei Heng, and Peter B. Gilbert (2020) Hybrid Approach for the Stratified Mark-Specific Proportional Hazards Model  with Missing Covariates and Missing Marks, with Applications to Vaccine Efficacy Trials
 
 The folder contains:
 * sim_data.mat: a simulated dataset
