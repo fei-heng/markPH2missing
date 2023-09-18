@@ -175,6 +175,9 @@ for j=1:n0
             for kk=1:nstrt
                 S0kk=(nansum((repmat(X.*(strata==kk-1),1,n)>=repmat(X',n,1)).*exp(eb).*repmat(wei,1,n))+nansum((repmat(X.*(strata==kk-1),1,n)>=repmat(X',n,1)).*pred_eb0.*repmat(1-wei,1,n)))./sum(repmat(strata==kk-1,1,n));
                 dlambdakk=1./S0kk.*delta'.*wei'.*nansum((repmat(X.*(strata==kk-1).*delta,1,n)==repmat(X',n,1)).*repmat(strata==kk-1,1,n)')./nansum(repmat(strata==kk-1,1,n));
+                % In ENSEMBLE project, I deleted wei in the above formula
+                % for dlambdakk and optimized other parts of the code to 
+                % improve the computational efficiency
                 dlambdakk(isnan(dlambdakk))=0;
                 Var2a= nansum( (repmat(Ze(:,k),1,n) - repmat(AS1(k,:)./AS0(k,:),n,1)).*exp(eb) .*repmat(K((V'-v(j))/h)/h.*dlambdakk,n,1).*(repmat(X.*(strata==kk-1),1,n)>=repmat(X',n,1)),2) ;
                 Var2kk(kk,:)=Var2a'.*(strata==kk-1)' ;
